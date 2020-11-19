@@ -1,6 +1,6 @@
 import pytest
 
-from creational.factory.application import Application
+from patterns.creational.factory.application import Application
 
 
 class TestApplicationTransportDelivery:

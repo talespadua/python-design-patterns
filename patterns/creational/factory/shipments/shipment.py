@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from creational.factory.transport.base_transport import BaseTransport
+from patterns.creational.factory.transport.base_transport import BaseTransport
 
 
 # This is the base creator class

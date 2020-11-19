@@ -1,4 +1,4 @@
-from creational.factory.transport.base_transport import BaseTransport
+from patterns.creational.factory.transport.base_transport import BaseTransport
 
 
 class Ship(BaseTransport):

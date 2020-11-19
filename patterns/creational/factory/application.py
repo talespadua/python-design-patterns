@@ -1,7 +1,7 @@
-from creational.factory.shipments.air_shipment import AirShipment
-from creational.factory.shipments.land_shipment import LandShipment
-from creational.factory.shipments.shipment import Shipment
-from creational.factory.shipments.water_shipment import WaterShipment
+from patterns.creational.factory.shipments.air_shipment import AirShipment
+from patterns.creational.factory.shipments.land_shipment import LandShipment
+from patterns.creational.factory.shipments.shipment import Shipment
+from patterns.creational.factory.shipments.water_shipment import WaterShipment
 
 
 class Application:
