@@ -5,8 +5,8 @@ class Car:
     def __init__(self) -> None:
         self.seats: Optional[int] = None
         self.engine: Optional[str] = None
-        self.trip_computer: Optional[bool] = None
-        self.gps: Optional[str] = None
+        self.trip_computer: bool = False
+        self.gps: bool = False
 
     def set_seats(self, seats: int) -> None:
         self.seats = seats
@@ -18,4 +18,4 @@ class Car:
         self.trip_computer = True
 
     def set_gps(self) -> None:
-        self.gps = "gps"
+        self.gps = True
