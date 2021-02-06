@@ -13,6 +13,8 @@ def main() -> None:
     Director.construct_sports_car(manual_builder)
 
     manual = manual_builder.get_product()
+    print(car)
+    print(manual)
 
 
 if __name__ == "__main__":
