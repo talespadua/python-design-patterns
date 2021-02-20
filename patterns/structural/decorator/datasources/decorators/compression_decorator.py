@@ -12,6 +12,6 @@ class CompressionDecorator(DataSourceDecorator):
         data = self._compress_data(data)
         self._wrappee.write_data(data)
 
-    def read_data(self, data: str) -> None:
-        data = self._decompress_data(data)
-        self._wrappee.read_data(data)
+    def read_data(self) -> str:
+        data = self._wrappee.read_data()
+        return self._decompress_data(data)

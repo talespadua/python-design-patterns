@@ -12,6 +12,6 @@ class EncryptionDecorator(DataSourceDecorator):
         data = self._encrypt_data(data)
         self._wrappee.write_data(data)
 
-    def read_data(self, data: str) -> None:
-        data = self._decrypt_data(data)
-        self._wrappee.read_data(data)
+    def read_data(self) -> str:
+        data = self._wrappee.read_data()
+        return self._decrypt_data(data)

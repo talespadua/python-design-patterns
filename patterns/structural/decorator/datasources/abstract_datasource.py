@@ -7,5 +7,5 @@ class DataSource(ABC):
         ...
 
     @abstractmethod
-    def read_data(self, data: str) -> None:
+    def read_data(self) -> str:
         ...

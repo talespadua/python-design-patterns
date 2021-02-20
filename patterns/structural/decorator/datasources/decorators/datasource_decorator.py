@@ -8,5 +8,5 @@ class DataSourceDecorator(DataSource):
     def write_data(self, data: str) -> None:
         self._wrappee.write_data(data)
 
-    def read_data(self, data: str) -> None:
-        self._wrappee.read_data(data)
+    def read_data(self) -> str:
+        return self._wrappee.read_data()
