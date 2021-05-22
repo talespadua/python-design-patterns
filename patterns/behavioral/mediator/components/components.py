@@ -6,10 +6,10 @@ class Component:
     def __init__(self, dialog: mediator.AbstractMediator):
         self.dialog = dialog
 
-    def click(self):
+    def click(self) -> None:
         self.dialog.notify(self, "click")
 
-    def keypress(self):
+    def keypress(self) -> None:
         self.dialog.notify(self, "keypress")
 
 

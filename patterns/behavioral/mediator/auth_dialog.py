@@ -3,7 +3,7 @@ from .components.components import Checkbox, Textbox, Button, Component
 
 
 class AuthenticationDialog(AbstractMediator):
-    def __init__(self):
+    def __init__(self) -> None:
         self.title = "Log In"
         self.login_checkbox = Checkbox(self)
         self.login_username = Textbox(self)
