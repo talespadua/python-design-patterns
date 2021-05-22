@@ -13,7 +13,7 @@ class AuthenticationDialog(AbstractMediator):
         self.ok_button = Button(self)
         self.cancel_button = Button(self)
 
-    def notify(self, sender: Component, event: str):
+    def notify(self, sender: Component, event: str) -> None:
         if sender is self.login_checkbox and event == "check":
             if self.login_checkbox.checked:
                 self.title = "Log In"

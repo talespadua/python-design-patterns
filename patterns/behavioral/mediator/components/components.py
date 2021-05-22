@@ -22,10 +22,10 @@ class Textbox(Component):
 
 
 class Checkbox(Component):
-    def __init__(self, dialog: mediator.AbstractMediator):
+    def __init__(self, dialog: mediator.AbstractMediator) -> None:
         super().__init__(dialog)
         self.checked = False
 
-    def check(self):
+    def check(self) -> None:
         self.dialog.notify(self, "check")
         self.checked = False if self.checked else True
